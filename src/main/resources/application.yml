@@ -24,3 +24,15 @@ spring:
 logging:
   level:
     root: info
+    jdbc: warn
+
+log4jdbc:
+  dump:
+    sql:
+      addsemicolon: true
+      maxlinelength: 0
+  sqltiming:
+    warn:
+      threshold: 50
+    error:
+      threshold: 300
