@@ -21,6 +21,16 @@ spring:
       '[javax.persistence.schema-generation.create-source]': metadata
       '[javax.persistence.schema-generation.drop-source]': metadata
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
+  info:
+    git:
+      mode: full
+
 logging:
   level:
     root: info
