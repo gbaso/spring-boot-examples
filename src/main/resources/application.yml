@@ -21,6 +21,21 @@ spring:
       # '[javax.persistence.schema-generation.scripts.drop-target]': drop.sql
       # '[javax.persistence.schema-generation.create-source]': metadata
       # '[javax.persistence.schema-generation.drop-source]': metadata
+  mail:
+    host: localhost
+    port: 2525
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: false
+          starttls:
+            enable: false
+  freemarker:
+    cache: true
+    settings:
+      '[template_exception_handler]': rethrow
+      '[number_format]': computer
 
 management:
   endpoints:
