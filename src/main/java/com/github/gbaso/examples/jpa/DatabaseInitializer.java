@@ -12,7 +12,7 @@ import com.github.gbaso.examples.jpa.entities.CustomerOrder;
 import com.github.gbaso.examples.jpa.repositories.CustomerRepository;
 
 @Configuration
-public class DatabaseInizializer {
+public class DatabaseInitializer {
 
     @Bean
     ApplicationRunner addCustomers(TransactionTemplate transactionTemplate, CustomerRepository customerRepository) {
